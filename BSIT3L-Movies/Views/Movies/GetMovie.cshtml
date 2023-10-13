@@ -1,0 +1,56 @@
+﻿@model BSIT3L_Movies.Models.MovieViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        /* Add CSS for layout */
+        .movie-container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.00);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-image {
+            display: flex;
+            margin: 20px; /* Add some spacing between image and text */
+            border-radius: 10px; /* Apply border-radius for rounded corners */
+            overflow: hidden; /* Ensure that the rounded image is contained within its box */
+        }
+
+        .movie-text {
+            flex: 2; /* Take up two-thirds of the container */
+            font-size: 20px;
+        }
+
+        .movie-image img {
+            width: 100%; /* Make the image cover the entire container */
+            height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <h2>Movie Details</h2>
+    <div class="movie-container">
+        <div class="movie-image">
+            <a href="https://www.youtube.com/results?search_query=@Model.Name+trailer">
+                <img src="@Model.ImageURL" alt="@Model.Name" width="200" height="300">
+            </a>
+            
+        </div>
+        <div class="movie-text">
+            <p>Movie ID: @Model.Id</p>
+            <p>Movie Name: @Model.Name</p>
+            <p>Rating: @Model.Rating</p>
+            <p>Release Year: @Model.ReleaseYear</p>
+            <p>Genre: @Model.Genre</p>
+        </div>
+    </div>
+</body>
+</html>

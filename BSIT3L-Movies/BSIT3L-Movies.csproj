@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>BSIT3L_Movies</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Images\1.jpg" />
+    <None Include="wwwroot\Images\10.jpg" />
+    <None Include="wwwroot\Images\11.jpg" />
+    <None Include="wwwroot\Images\12.jpg" />
+    <None Include="wwwroot\Images\13.jpg" />
+    <None Include="wwwroot\Images\14.jpg" />
+    <None Include="wwwroot\Images\15.jpg" />
+    <None Include="wwwroot\Images\2.jpg" />
+    <None Include="wwwroot\Images\3.jpg" />
+    <None Include="wwwroot\Images\4.jpg" />
+    <None Include="wwwroot\Images\5.jpg" />
+    <None Include="wwwroot\Images\6.jpg" />
+    <None Include="wwwroot\Images\7.jpg" />
+    <None Include="wwwroot\Images\8.jpg" />
+    <None Include="wwwroot\Images\9.jpg" />
+  </ItemGroup>
+</Project>
