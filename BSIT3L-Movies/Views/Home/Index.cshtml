@@ -14,16 +14,20 @@
 <table>
     <thead>
         <tr>
-
+            <th></th>
             <th>Name</th>
 
         </tr>
     </thead>
     <tbody>
+       
+
         @foreach (var movie in Model)
         {
             <tr>
 
+
+                <td><img src="@movie.ImageURL" alt="@movie.Name" width="100" height="150"></td>
 
                 <td><a href="/movies/getmovie/@movie.Id" style="text-decoration: none; color: black; font-size: 20px;">@movie.Name</a></td>
 

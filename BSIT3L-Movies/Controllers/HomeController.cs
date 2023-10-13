@@ -15,21 +15,21 @@ public class HomeController : Controller
         _logger = logger;
         _movies = new List<MovieViewModel>
         {
-            new MovieViewModel {Name = "The Social Network ", Id = 1},
-            new MovieViewModel {Name = "Pirates of Silicon Valley", Id = 2},
-            new MovieViewModel {Name = "Hackers",  Id = 3},
-            new MovieViewModel {Name = "WarGames ",  Id = 4},
-            new MovieViewModel {Name = "Tron ",  Id = 5},
-            new MovieViewModel {Name = "The Imitation Game",  Id = 6},
-            new MovieViewModel {Name = "Jobs ",  Id = 7},
-            new MovieViewModel {Name = "Steve Jobs",  Id = 8},
-            new MovieViewModel {Name = "Ex Machina",  Id = 9},
-            new MovieViewModel {Name = "Mr. Robot ",  Id = 10},
-            new MovieViewModel {Name = "Black Mirror: Bandersnatch ",  Id = 11},
-            new MovieViewModel {Name = "Antitrust ",  Id = 12},
-            new MovieViewModel {Name = "Transcendence  ",  Id = 13},
-            new MovieViewModel {Name = "Sneakers ",  Id = 14},
-            new MovieViewModel {Name = "The Matrix ",  Id = 15},
+            new MovieViewModel {ImageURL = "/images/1.jpg",Name = "The Social Network ", Id = 1},
+            new MovieViewModel {ImageURL = "/images/2.jpg",Name = "Pirates of Silicon Valley", Id = 2},
+            new MovieViewModel {ImageURL = "/images/3.jpg", Name = "Hackers",  Id = 3},
+            new MovieViewModel {ImageURL = "/images/4.jpg", Name = "WarGames ",  Id = 4},
+            new MovieViewModel {ImageURL = "/images/5.jpg", Name = "Tron ",  Id = 5},
+            new MovieViewModel {ImageURL = "/images/6.jpg", Name = "The Imitation Game",  Id = 6},
+            new MovieViewModel {ImageURL = "/images/7.jpg", Name = "Jobs ",  Id = 7},
+            new MovieViewModel {ImageURL = "/images/8.jpg", Name = "Steve Jobs",  Id = 8},
+            new MovieViewModel {ImageURL = "/images/9.jpg", Name = "Ex Machina",  Id = 9},
+            new MovieViewModel {ImageURL = "/images/10.jpg", Name = "Mr. Robot ",  Id = 10},
+            new MovieViewModel {ImageURL = "/images/11.jpg", Name = "Black Mirror: Bandersnatch ",  Id = 11},
+            new MovieViewModel {ImageURL = "/images/12.jpg", Name = "Antitrust ",  Id = 12},
+            new MovieViewModel {ImageURL = "/images/13.jpg", Name = "Transcendence  ",  Id = 13},
+            new MovieViewModel {ImageURL = "/images/14.jpg", Name = "Sneakers ",  Id = 14},
+            new MovieViewModel {ImageURL = "/images/15.jpg", Name = "The Matrix ",  Id = 15},
             };
     }
 
